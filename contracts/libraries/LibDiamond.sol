@@ -11,20 +11,13 @@ import { IDiamondCut } from "../interfaces/IDiamondCut.sol";
 // The loupe functions are required by the EIP2535 Diamonds standard
 
 library LibDiamond {
-    bytes32 constant DIAMOND_STORAGE_POSITION = keccak256("diamond.standard.diamond.storage");
-
-    struct FacetAddressAndSelectorPosition {
-        address facetAddress;
-        uint16 selectorPosition;
-    }
+    bytes32 constant DIAMOND_STORAGE_POSITION = keccak256("diamondstandard.storage");
 
     struct DiamondStorage {
         // function selector => facet address and selector position in selectors array
         mapping(bytes4 => FacetAddressAndSelectorPosition) facetAddressAndSelectorPosition;
         bytes4[] selectors;
         mapping(bytes4 => bool) supportedInterfaces;
-        // owner of the contract
-        address contractOwner;
     }
 
     function diamondStorage() internal pure returns (DiamondStorage storage ds) {
@@ -34,24 +27,14 @@ library LibDiamond {
         }
     }
 
-    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
-
-    function setContractOwner(address _newOwner) internal {
-        DiamondStorage storage ds = diamondStorage();
-        address previousOwner = ds.contractOwner;
-        ds.contractOwner = _newOwner;
-        emit OwnershipTransferred(previousOwner, _newOwner);
-    }
-
-    function contractOwner() internal view returns (address contractOwner_) {
-        contractOwner_ = diamondStorage().contractOwner;
-    }
-
-    function enforceIsContractOwner() internal view {
-        require(msg.sender == diamondStorage().contractOwner, "LibDiamond: Must be contract owner");
-    }
+    // DIAMONDCUT FACET //
 
     event DiamondCut(IDiamondCut.FacetCut[] _diamondCut, address _init, bytes _calldata);
+
+    struct FacetAddressAndSelectorPosition {
+        address facetAddress;
+        uint16 selectorPosition;
+    }
 
     // Internal function version of diamondCut
     function diamondCut(
