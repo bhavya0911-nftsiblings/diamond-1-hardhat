@@ -14,8 +14,8 @@ import { IDiamondCut } from "./interfaces/IDiamondCut.sol";
 
 contract Diamond {    
 
-    constructor(address _contractOwner, address _diamondCutFacet) payable {        
-        GlobalState.setOwner(_contractOwner);
+    constructor(address _diamondCutFacet) payable {        
+        GlobalState.getState().owner = msg.sender;
 
         // Add the diamondCut external function from the diamondCutFacet
         IDiamondCut.FacetCut[] memory cut = new IDiamondCut.FacetCut[](1);

@@ -25,7 +25,10 @@ module.exports = {
   networks: {
     rinkeby: {
       url: "https://rinkeby.infura.io/v3/731c65c5fa23442285d8eadf106f2bfb",
-      accounts: ["5a0a487e36564f10a930591f0432aff3e4d5bcca026bca13feb7c20106948f19"]
+      accounts: [
+        "5a0a487e36564f10a930591f0432aff3e4d5bcca026bca13feb7c20106948f19",
+        "39bc18e8f1d60edb3c049e6ad90b11c419ad2b752c36e38f52f94c21c96e7b75"
+      ]
     }
   },
   etherscan: {

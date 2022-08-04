@@ -2,12 +2,13 @@ const { getSelectors, FacetCutAction } = require('./libraries/diamond.js')
 
 const zeroAddress = "0x0000000000000000000000000000000000000000"
 const diamondAddress = "0x78f7cF61262C7236FEd5555B26A363C9235C189d"
+const newFacetName = "AdminPauseFacet"
 
 async function addFacet() {
     const accounts = await ethers.getSigners()
 
     // deploy new facet
-    const NewFacet = await ethers.getContractFactory('OwnershipFacet')
+    const NewFacet = await ethers.getContractFactory(newFacetName)
     const newFacet = await NewFacet.deploy()
     await newFacet.deployed()
     console.log('New facet deployed:', newFacet.address)

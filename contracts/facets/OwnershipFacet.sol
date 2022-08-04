@@ -1,33 +1,37 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import { GlobalState } from "../libraries/GlobalState.sol";
-import { IERC173 } from "../interfaces/IERC173.sol";
+import { GlobalState, state } from "../libraries/GlobalState.sol";
 
-contract OwnershipFacet is IERC173 {
-    // function owner() external override view returns (address) {
-    //     return GlobalState.owner();
-    // }
-
-    function owner() external override view returns (address) {
+contract OwnershipFacet {
+    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+    
+    function owner() public view returns (address) {
         return GlobalState.getState().owner;
     }
 
-    function isAdmin(address _addr) external view returns (bool) {
+    function transferOwnership(address newOwner) public {
+        address previousOwner = owner();
+        require(msg.sender == previousOwner, "OwnershipFacet: caller must be contract owner");
+
+        GlobalState.getState().owner = newOwner;
+        emit OwnershipTransferred(previousOwner, newOwner);
+    }
+
+    function isAdmin(address _addr) public view returns (bool) {
         return GlobalState.isAdmin(_addr);
     }
 
-    function toggleAdmins(address[] calldata accounts) external {
-        GlobalState.toggleAdmins(accounts);
-    }
+    function toggleAdmins(address[] calldata accounts) public {
+        GlobalState.requireCallerIsAdmin();
+        state storage _state = GlobalState.getState();
 
-    function transferOwnership(address _newOwner) external override {
-        address previousOwner = GlobalState.owner();
-
-        require(msg.sender == previousOwner, "OwnershipFacet: caller must be contract owner");
-
-        GlobalState.setOwner(_newOwner);
-
-        emit OwnershipTransferred(previousOwner, _newOwner);
+        for (uint256 i; i < accounts.length; i++) {
+            if (_state.admins[accounts[i]]) {
+                delete _state.admins[accounts[i]];
+            } else {
+                _state.admins[accounts[i]] = true;
+            }
+        }
     }
 }

@@ -20,17 +20,7 @@ library GlobalState {
         }
     }
 
-    // OWNERSHIP FACET // 
-
-    function setOwner(address _newOwner) internal {
-        // It is the responsibility of the facet calling
-        // this function to follow ERC-173 standard
-        getState().owner = _newOwner;
-    }
-
-    function owner() internal view returns (address contractOwner_) {
-        contractOwner_ = getState().owner;
-    }
+    // OWNERSHIP FACET //
 
     function isAdmin(address _addr) internal view returns (bool) {
         state storage ds = getState();
@@ -38,24 +28,18 @@ library GlobalState {
     }
 
     function requireCallerIsAdmin() internal view {
-        require(isAdmin(msg.sender), "LibDiamond: caller must be an admin");
-    }
-
-    function toggleAdmins(address[] calldata accounts) internal {
-        requireCallerIsAdmin();
-
-        state storage ds = getState();
-
-        for (uint256 i; i < accounts.length; i++) {
-            if (ds.admins[accounts[i]]) {
-                delete ds.admins[accounts[i]];
-            } else {
-                ds.admins[accounts[i]] = true;
-            }
-        }
+        require(isAdmin(msg.sender), "GlobalState: caller must be an admin");
     }
 
     // ADMINPAUSE FACET //
 
-    
+    function togglePause() internal returns (bool) {
+        bool priorStatus = getState().paused;
+        getState().paused = !priorStatus;
+        return !priorStatus;
+    }
+
+    function requireContractIsNotPaused() internal view {
+        require(!getState().paused);
+    }
 }

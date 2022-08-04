@@ -2,22 +2,20 @@ const { getSelectors, FacetCutAction } = require('./libraries/diamond.js')
 
 const zeroAddress = "0x0000000000000000000000000000000000000000"
 const diamondAddress = "0x78f7cF61262C7236FEd5555B26A363C9235C189d"
-const newFacetName = 'OwnershipFacet'
 
-async function replaceFacet() {
+const nameOfFacetToBeRemoved = 'VarSetterFacet'
+const facetToBeRemovedAddress = "0x1171927BF1014C6b40E3ca49F4a1cdd66946581E";
+
+async function removeFacet() {
     const accounts = await ethers.getSigners()
 
-    // deploy new facet
-    const NewFacet = await ethers.getContractFactory(newFacetName)
-    const newFacet = await NewFacet.deploy()
-    await newFacet.deployed()
-    console.log('New facet deployed:', newFacet.address)
+    const facetToBeRemoved = await ethers.getContractAt(nameOfFacetToBeRemoved, facetToBeRemovedAddress)
 
     const cut = []
     cut.push({
-        facetAddress: newFacet.address,
-        action: FacetCutAction.Replace,
-        functionSelectors: getSelectors(newFacet)
+        facetAddress: zeroAddress,
+        action: FacetCutAction.Remove,
+        functionSelectors: getSelectors(facetToBeRemoved)
     })
 
     // upgrade diamond with facets
@@ -41,7 +39,7 @@ async function replaceFacet() {
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
 if (require.main === module) {
-    replaceFacet()
+    removeFacet()
       .then(() => process.exit(0))
       .catch(error => {
         console.error(error)
