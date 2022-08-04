@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-library PrivSalePeriodLibrary {
+library PrivSalePeriodLib {
     bytes32 constant DIAMOND_STORAGE_POSITION = keccak256("privsaleperiodlibrary.storage");
 
     struct state {

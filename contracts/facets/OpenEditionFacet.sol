@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import { GlobalState, state } from "../libraries/GlobalState.sol";
-import { OpenEditionLibrary } from "../libraries/OpenEditionLibrary.sol";
+import { GlobalState } from "../libraries/GlobalState.sol";
+import { OpenEditionLib } from "../libraries/OpenEditionLib.sol";
 
 contract OpenEditionFacet {
     /**
@@ -11,7 +11,7 @@ contract OpenEditionFacet {
      */
     function beginSale() public {
         GlobalState.requireCallerIsAdmin();
-        OpenEditionLibrary.getState().saleTimestamp = block.timestamp;
+        OpenEditionLib.getState().saleTimestamp = block.timestamp;
     }
 
     /**
@@ -19,7 +19,7 @@ contract OpenEditionFacet {
      */
     function setSaleTimestamp(uint256 timestamp) public {
         GlobalState.requireCallerIsAdmin();
-        OpenEditionLibrary.getState().saleTimestamp = timestamp;
+        OpenEditionLib.getState().saleTimestamp = timestamp;
     }
 
     /**
@@ -27,7 +27,7 @@ contract OpenEditionFacet {
      */
     function setSaleLength(uint256 length) public {
         GlobalState.requireCallerIsAdmin();
-        OpenEditionLibrary.getState().saleLength = length;
+        OpenEditionLib.getState().saleLength = length;
     }
 
     /**
@@ -35,13 +35,13 @@ contract OpenEditionFacet {
      */
     function setSaleLengthInHours(uint256 length) public {
         GlobalState.requireCallerIsAdmin();
-        OpenEditionLibrary.getState().saleLength = length * 3600;
+        OpenEditionLib.getState().saleLength = length * 3600;
     }
 
     /**
      * @dev Check whether the sale is currently active.
      */
     function isSaleActive() public view returns (bool) {
-        return OpenEditionLibrary.isSaleActive();
+        return OpenEditionLib.isSaleActive();
     }
 }

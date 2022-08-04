@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import { MerkleProof } from "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 
-library AllowlistLibrary {
+library AllowlistLib {
     bytes32 constant DIAMOND_STORAGE_POSITION = keccak256("allowlistlibrary.storage");
 
     struct state {

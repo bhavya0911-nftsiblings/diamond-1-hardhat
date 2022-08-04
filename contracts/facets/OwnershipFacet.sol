@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import { GlobalState, state } from "../libraries/GlobalState.sol";
+import { GlobalState } from "../libraries/GlobalState.sol";
 
 contract OwnershipFacet {
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
@@ -24,7 +24,7 @@ contract OwnershipFacet {
 
     function toggleAdmins(address[] calldata accounts) public {
         GlobalState.requireCallerIsAdmin();
-        state storage _state = GlobalState.getState();
+        GlobalState.state storage _state = GlobalState.getState();
 
         for (uint256 i; i < accounts.length; i++) {
             if (_state.admins[accounts[i]]) {

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-library OpenEditionLibrary {
+library OpenEditionLib {
     bytes32 constant DIAMOND_STORAGE_POSITION = keccak256("openeditionlibrary.storage");
 
     struct state {

@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import { IERC20 } from "@openzeppelin/contracts/interfaces/IERC20.sol";
 
-library ERC20PaymentLibrary {
+library ERC20PaymentLib {
     bytes32 constant DIAMOND_STORAGE_POSITION = keccak256("erc20paymentlibrary.storage");
 
     struct state {

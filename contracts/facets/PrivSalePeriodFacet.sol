@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import { GlobalState, state } from "../libraries/GlobalState.sol";
-import { PrivSalePeriodLibrary } from "../libraries/PrivSalePeriodLibrary.sol";
+import { GlobalState } from "../libraries/GlobalState.sol";
+import { PrivSalePeriodLib } from "../libraries/PrivSalePeriodLib.sol";
 
 contract PrivSalePeriodFacet {
     /**
     * @dev Get length of private sale in seconds.
     */
     function privSaleLength() public view returns (uint256) {
-        return PrivSalePeriodLibrary.getState().privSaleLength;
+        return PrivSalePeriodLib.getState().privSaleLength;
     }
 
     /**
     * @dev Get timestamp when sale begins.
     */
     function saleTimestamp() public view returns (uint256) {
-        return PrivSalePeriodLibrary.getState().saleTimestamp;
+        return PrivSalePeriodLib.getState().saleTimestamp;
     }
 
     /**
@@ -25,7 +25,7 @@ contract PrivSalePeriodFacet {
      */
     function beginPrivSale() public {
         GlobalState.requireCallerIsAdmin();
-        PrivSalePeriodLibrary.getState().saleTimestamp = block.timestamp;
+        PrivSalePeriodLib.getState().saleTimestamp = block.timestamp;
     }
 
     /**
@@ -33,7 +33,7 @@ contract PrivSalePeriodFacet {
      */
     function setSaleTimestamp(uint256 timestamp) public {
         GlobalState.requireCallerIsAdmin();
-        PrivSalePeriodLibrary.getState().saleTimestamp = timestamp;
+        PrivSalePeriodLib.getState().saleTimestamp = timestamp;
     }
 
     /**
@@ -42,7 +42,7 @@ contract PrivSalePeriodFacet {
     */
     function setPrivSaleLengthInHours(uint256 length) public {
         GlobalState.requireCallerIsAdmin();
-        PrivSalePeriodLibrary.getState().privSaleLength = length * 3600;
+        PrivSalePeriodLib.getState().privSaleLength = length * 3600;
     }
 
     /**
@@ -50,7 +50,7 @@ contract PrivSalePeriodFacet {
     *      phase is currently active.
     */
     function isPrivSaleActive() public view returns (bool) {
-        return PrivSalePeriodLibrary.isPrivSaleActive();
+        return PrivSalePeriodLib.isPrivSaleActive();
     }
 
     /**
@@ -58,6 +58,6 @@ contract PrivSalePeriodFacet {
     *      active.
     */
     function isPublicSaleActive() public view returns (bool) {
-        return PrivSalePeriodLibrary.isPublicSaleActive();
+        return PrivSalePeriodLib.isPublicSaleActive();
     }
 }

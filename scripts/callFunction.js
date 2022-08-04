@@ -1,10 +1,10 @@
 const { ethers } = require("hardhat")
 
-async function callFunction() {
-  // ethers.getContractAt is a hardhat-specific function!
-  // calling contract functions will need to be done a different way on any front-end website,
-  // this file is just to test that you can call the diamond and run functions correctly
+// NOTE: ethers.getContractAt is a hardhat-specific function
+// calling contract functions will need to be done a different way on any front-end website,
+// this file is just to test that you can call the diamond and run functions correctly
 
+async function callFunction() {
     const diamondAddress = "0x78f7cF61262C7236FEd5555B26A363C9235C189d";
 
     const contract = await ethers.getContractAt('IDiamondLoupe', diamondAddress)
