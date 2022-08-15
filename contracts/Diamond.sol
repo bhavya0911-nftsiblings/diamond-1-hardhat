@@ -11,6 +11,7 @@ pragma solidity ^0.8.0;
 import { LibDiamond } from "./libraries/LibDiamond.sol";
 import { GlobalState } from "./libraries/GlobalState.sol";
 import { IDiamondCut } from "./interfaces/IDiamondCut.sol";
+import { TokenState } from "./libraries/TokenState.sol";
 
 contract Diamond {    
 

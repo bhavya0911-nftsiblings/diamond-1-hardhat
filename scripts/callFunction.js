@@ -5,7 +5,7 @@ const { ethers } = require("hardhat")
 // this file is just to test that you can call the diamond and run functions correctly
 
 async function callFunction() {
-    const diamondAddress = "0x78f7cF61262C7236FEd5555B26A363C9235C189d";
+    const diamondAddress = "0xA1E86F3C7Fd58b85648de4DCB35AC9F222871a5D";
 
     const contract = await ethers.getContractAt('IDiamondLoupe', diamondAddress)
     console.log(await contract.facets())

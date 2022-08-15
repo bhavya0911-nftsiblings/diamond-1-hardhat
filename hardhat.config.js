@@ -1,7 +1,7 @@
 
 /* global ethers task */
 require('@nomiclabs/hardhat-waffle')
-
+require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -21,18 +21,15 @@ task('accounts', 'Prints the list of accounts', async () => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: '0.8.7',
+  solidity: '0.8.4',
   networks: {
     rinkeby: {
-      url: "https://rinkeby.infura.io/v3/731c65c5fa23442285d8eadf106f2bfb",
-      accounts: [
-        "5a0a487e36564f10a930591f0432aff3e4d5bcca026bca13feb7c20106948f19",
-        "39bc18e8f1d60edb3c049e6ad90b11c419ad2b752c36e38f52f94c21c96e7b75"
-      ]
+      url: `https://eth-rinkeby.alchemyapi.io/v2/${process.env.ALCHEMY_API_KEY}`,
+      accounts: [process.env.PRI_KEY]
     }
   },
   etherscan: {
-    apiKey: "7H3W5RBZJQHBXZSM1G11AWKBSD356TNUJ1"
+    apiKey: process.env.ETHERSCAN_API_KEY
   }
   // settings: {
   //   optimizer: {

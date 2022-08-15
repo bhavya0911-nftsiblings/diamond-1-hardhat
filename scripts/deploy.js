@@ -4,6 +4,7 @@
 const { getSelectors, FacetCutAction } = require('./libraries/diamond.js')
 
 async function deployDiamond () {
+
   const accounts = await ethers.getSigners()
   const contractOwner = accounts[0]
 
@@ -15,7 +16,7 @@ async function deployDiamond () {
 
   // deploy Diamond
   const Diamond = await ethers.getContractFactory('Diamond')
-  const diamond = await Diamond.deploy(contractOwner.address, diamondCutFacet.address)
+  const diamond = await Diamond.deploy(diamondCutFacet.address)
   await diamond.deployed()
   console.log('Diamond deployed:', diamond.address)
 
@@ -31,8 +32,12 @@ async function deployDiamond () {
   console.log('')
   console.log('Deploying facets')
   const FacetNames = [
+    'AdminPauseFacet',
     'DiamondLoupeFacet',
-    'OwnershipFacet'
+    'OpenEditionFacet',
+    'OwnershipFacet',
+    'RoyaltiesConfigFacet',
+    'TokenFacet'
   ]
   const cut = []
   for (const FacetName of FacetNames) {
@@ -47,6 +52,7 @@ async function deployDiamond () {
     })
   }
 
+  cut[5].functionSelectors.splice(15, 1)
   // upgrade diamond with facets
   console.log('')
   console.log('Diamond Cut:', cut)
