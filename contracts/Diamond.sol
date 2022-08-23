@@ -15,7 +15,7 @@ import { TokenState } from "./libraries/TokenState.sol";
 
 contract Diamond {    
 
-    constructor(address _diamondCutFacet) payable {        
+    constructor(address _diamondCutFacet) payable {
         GlobalState.getState().owner = msg.sender;
 
         // Add the diamondCut external function from the diamondCutFacet

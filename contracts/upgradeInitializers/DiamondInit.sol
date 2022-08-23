@@ -8,6 +8,7 @@ pragma solidity ^0.8.0;
 * Implementation of a diamond.
 /******************************************************************************/
 
+import { GlobalState } from "../libraries/GlobalState.sol";
 import { LibDiamond } from "../libraries/LibDiamond.sol";
 import { IDiamondLoupe } from "../interfaces/IDiamondLoupe.sol";
 import { IDiamondCut } from "../interfaces/IDiamondCut.sol";
@@ -23,6 +24,7 @@ contract DiamondInit {
 
         LibDiamond.DiamondStorage storage ds = LibDiamond.diamondStorage();
         TokenState.State storage ts = TokenState.getState();
+        GlobalState.state storage gs = GlobalState.getState();
         ds.supportedInterfaces[type(IERC165).interfaceId] = true;
         ds.supportedInterfaces[type(IDiamondCut).interfaceId] = true;
         ds.supportedInterfaces[type(IDiamondLoupe).interfaceId] = true;
@@ -30,6 +32,8 @@ contract DiamondInit {
         ds.supportedInterfaces[type(IERC721).interfaceId] = true;
         ds.supportedInterfaces[type(IERC721Metadata).interfaceId] = true;
         ds.supportedInterfaces[0x2a55205a] = true; // On-Chain Royalty interface Id
+        
+        gs.owner = msg.sender;
 
         ts._name = "MyToken";
         ts._symbol = "MTK";

@@ -25,7 +25,6 @@ contract DiamondCutFacet is IDiamondCut {
         address _init,
         bytes calldata _calldata
     ) external override {
-        GlobalState.requireCallerIsAdmin();
         LibDiamond.diamondCut(_diamondCut, _init, _calldata);
     }
 }

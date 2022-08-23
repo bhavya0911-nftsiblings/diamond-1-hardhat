@@ -1,3 +1,4 @@
+// FIRST INSTANCE //
 DiamondCutFacet deployed: 0x517b4cC680144c2028Ed8416F7a92D3D8173b09A
 Diamond deployed: 0xA1E86F3C7Fd58b85648de4DCB35AC9F222871a5D
 DiamondInit deployed: 0xc88E31B0aA700cA4A9cE562D93277F4bB640Cc81
@@ -9,3 +10,565 @@ OpenEditionFacet deployed: 0x74F26E16111742FB5Af0Fba8D89E7612C2784947
 OwnershipFacet deployed: 0x0BCE655BD47fB22B508F43cc56d5a189174De9E4
 RoyaltiesConfigFacet deployed: 0xC916990938BD6B5617a69cf70Ad6Aac16574cc01
 TokenFacet deployed: 0xb6e64fb00433e8bCe455B0eF59515538359025FA
+
+// EXTRA NAME FROM THE ARTIFACTS FOLDER //
+56c3f6b84d8540e466fc1edfc6d3e2e0.json
+
+// SECOND INSTANCE FOR ETHERSCAN VERIFICATION //
+DiamondCutFacet deployed: 0xd5AAb9d836A8D08CfDca64129E8463312FB9eB6E
+Diamond deployed: 0xc43cAB8aa0AF593Eec438D0D1b578Dd9EeA32D39
+DiamondInit deployed: 0x0d8bA96db1EFca994472Df2Ff6E9E6C1c7C0fb07
+
+Deploying facets
+AdminPauseFacet deployed: 0xd95Ba36030AA8b3812c935F927a194fF36AAC070
+DiamondLoupeFacet deployed: 0x6faf8DE903331aA774619857a1A952e675144cb1
+OpenEditionFacet deployed: 0x4faE840f72995fF35349a6f07B5F71c0F3C746e6
+OwnershipFacet deployed: 0xA152a966D0eA43Bb3B980F475aA746cA0908cf26
+RoyaltiesConfigFacet deployed: 0x1B2695c1352301Ba3787501DCe4560CD89DEf9c1
+TokenFacet deployed: 0xf3bAdcfCc0F6E835855E74F91B1E21D7870C8013
+
+// THIRD INSTANCE FOR ETHERSCAN VERIFICATION //
+DiamondCutFacet deployed: 0xF1C1948DF4a06b4E5328a4b7a568d961140e8C9E
+Diamond deployed: 0x9cDf7EC9100968e67f2d0A93fC2582F8Dfd7c8a3
+DiamondInit deployed: 0x9bFD2AC59b338ea1f1D7BBe6647bef3F195846E4
+
+Deploying facets
+AdminPauseFacet deployed: 0x857723FD47d91db14B4303b52568DDC5862D86cE
+DiamondLoupeFacet deployed: 0xf3C3d33f5b0DC88A74E03fD16Cb9857EF61ba28b
+OpenEditionFacet deployed: 0x26ecea540be02dBa09926B71F72d60fE37B488Ca
+OwnershipFacet deployed: 0x4321Cd06E13bD9509111B54Ae0f89B7874a20E5C
+RoyaltiesConfigFacet deployed: 0x7E850691849A53f7322ceb892b8edf734161DDca
+TokenFacet deployed: 0xd9fa0875cdDAE2cD7835B141ac82db9fba1b6ac9
+
+// FOURTH INSTANCE FOR ETHERSCAN VERIFICATION //
+DiamondCutFacet deployed: 0x515E0c562ca04707EeF28EC7858F6167B45AD7d7
+Diamond deployed: 0xfD08BfFf3D0815Dec97937A046fb3B7f95Af19E9
+DiamondInit deployed: 0x289accB5438eE45C84ed3B80353866D09f6c3805
+
+Deploying facets
+AdminPauseFacet deployed: 0x557a01e5a8DaDf8F7741E052Aa20880f4758BBE6
+DiamondLoupeFacet deployed: 0x2f92BEAd6C5C10c3d78aa322919Ef4F9c108c131
+OpenEditionFacet deployed: 0x2a54f2A62684D3f37d9239AFA4f3a8C81d7Bfb31
+OwnershipFacet deployed: 0x0C04607d21Afc87c352AFcC47256490534C0a77c
+RoyaltiesConfigFacet deployed: 0x324ac3B2B70414928A6d9BD190afE4c94B0Fabf5
+TokenFacet deployed: 0x2378A2A39B14b620F1D9b93fd4F9c9ddFEfF8637
+
+// FIFTH INSTANCE FOR ETHERSCAN VERIFICATION //
+DiamondCutFacet deployed: 0xe9e15611087755d3B2D5b7890848F272137C4e0f
+Diamond deployed: 0x795096B879B46A7b6711222E12aC82e608381792
+DiamondInit deployed: 0xf9fB1ACf2ecB784C3E3ff9c5a15E79Cb37f48b9e
+
+Deploying facets
+AdminPauseFacet deployed: 0x4e79240Ad1D467C5fc649BBB5d371df4509896CC
+DiamondLoupeFacet deployed: 0xb8638ec9FFc93563ae2348216558220f1136A63c
+OpenEditionFacet deployed: 0x6a117Cf72992EEF8Cd4E3F404C77033DA4794D81
+OwnershipFacet deployed: 0xa0C4707d0200F495c1a3B52d09596eAefc850e18
+RoyaltiesConfigFacet deployed: 0xf1A4BA0164aCed1963040fe89b26c7C2507b010d
+TokenFacet deployed: 0xC84177442571e84380aD7Abc6D4b57279FC8E871
+
+// SIXTH INSTANCE FOR ETHERSCAN VERIFICATION //
+DiamondCutFacet deployed: 0x8B58AB78AF90eFdE8A738E73420dbe627aAF026a
+Diamond deployed: 0xEa6F859929AFB904C483b01745BF26f3A378bE0a
+DiamondInit deployed: 0x590b9Da80BE1930d9b1F71aD8c01B69b5AdeB9D6
+
+Deploying facets
+AdminPauseFacet deployed: 0xE9d3f8091153B02400a77baB9f73328dC4cB8B3e
+DiamondLoupeFacet deployed: 0x7BF98f5c167D633CA5eB898Ca08ac223bd4caD48
+OpenEditionFacet deployed: 0xa39b3a8DeC126754442DEdcA5BffcB2385104fb8
+OwnershipFacet deployed: 0x680a4b25BeECeB6b8bEAb6D8d97eC1164F53092d
+RoyaltiesConfigFacet deployed: 0x185aa837Cba53Db44bbaF0Ebc89c1113b9372e80
+TokenFacet deployed: 0xAa2947C0D9F27AAeBC125f7EFE37260a0f47650a
+
+// SEVENTH INSTANCE FOR ETHERSCAN VERIFICATION //
+DiamondCutFacet deployed: 0x2d5158d701398585b45f6A41d8aBE68A7A0b7900
+Diamond deployed: 0xc35bd4110F2EEe74397637B23E322Ab92f86e057
+DiamondInit deployed: 0xfD806aD78B2A1B4E00855467Da8dff16FfF4Bf3b
+
+Deploying facets
+AdminPauseFacet deployed: 0xa58E202fb2317a79792f902d96cc290d513177D2
+DiamondLoupeFacet deployed: 0x03430279A82547283d1372c7ADDEf16237c246Af
+OpenEditionFacet deployed: 0x05a28484FEb434393285C46f2761070A48Ee6aA4
+OwnershipFacet deployed: 0x2146b8055A9C02D80a93A91ba43Ea3A5Bf8df971
+RoyaltiesConfigFacet deployed: 0x5e521046f6b5d7A5Cba5231f745aDf4A43Ba1ba9
+TokenFacet deployed: 0xFd70b8a0dd2024A16a7239a1c57740C29912CcF4
+
+// EIGTH INSTANCE FOR ETHERSCAN VERIFICATION //
+DiamondCutFacet deployed: 0x8Cab880c233EE5a8AE7620934759D75C93Dd57Cd
+Diamond deployed: 0x7f2Db809a2eD7999c2F96f2aBe13E4d14Cd5B24f
+DiamondInit deployed: 0x945ac5432EC4cdCa21a3bB5b0B5D909222732380
+
+Deploying facets
+AdminPauseFacet deployed: 0xd2A87D238CC99A1b66d535D219bA1a5fc6CC8d6d
+DiamondLoupeFacet deployed: 0x3338bF39c86Ba42E6dc0d49f37e0e79bE5c4cC27
+OpenEditionFacet deployed: 0x6f9d1184B9c1B7efD3e797fBeA6422e1B3ae08E6
+OwnershipFacet deployed: 0x3dc0017a823715cc4865C7863C72ae2A6b6711b0
+RoyaltiesConfigFacet deployed: 0x4Fc79312B3375717B6B1960071E1F2f9d6c305F9
+TokenFacet deployed: 0xaF993A481f1BBb323f319aF2C41c22D38B84B995
+
+// NINTH INSTANCE FOR ETHERSCAN VERIFICATION //
+DiamondCutFacet deployed: 0xe413866eDFe42Bd47cA654b692b647bae3c3DB2F
+Diamond deployed: 0x37d86fCE18Cc796aEa7372bb75736b4ec282B664
+DiamondInit deployed: 0xa0567009669512B3E96E26aEC79E2114a92DCFf7
+
+Deploying facets
+AdminPauseFacet deployed: 0x9ba92ef64578fBae5a5dfA3151B8b12D567c65eF
+DiamondLoupeFacet deployed: 0x2BdEFC68B4FDA29D9b1eD2f91350116200EbCE19
+OpenEditionFacet deployed: 0xD82CdB4d5987482885BC97Dc648F2F52887a56d8
+OwnershipFacet deployed: 0x3CEcbED536Cb15eB39f55d4b7dAf605fcf144824
+RoyaltiesConfigFacet deployed: 0xb788Fc1165c23C988bBC9dBbbFe5fAC872b1C7E6
+TokenFacet deployed: 0xf19B04e1dFdcc23090cCBfDf59dD56BEB8d97599
+
+pragma solidity ^0.8.0;
+
+import { GlobalState } from "./libraries/GlobalState.sol";
+
+contract AdminPauseFacet {
+    event Paused(address account);
+    event Unpaused(address account);
+
+    function paused() public view returns (bool) {
+        return GlobalState.getState().paused;
+    }
+
+    function togglePause() public {
+        GlobalState.requireCallerIsAdmin();
+        if (GlobalState.togglePause()) {
+            emit Paused(msg.sender);
+        } else {
+            emit Unpaused(msg.sender);
+        }
+    }
+}
+
+pragma solidity ^0.8.0;
+
+/******************************************************************************\
+* Author: Nick Mudge <nick@perfectabstractions.com> (https://twitter.com/mudgen)
+* EIP-2535 Diamonds: https://eips.ethereum.org/EIPS/eip-2535
+/******************************************************************************/
+
+import { IDiamondCut } from "./interfaces/IDiamondCut.sol";
+import { LibDiamond } from "./libraries/LibDiamond.sol";
+import { GlobalState } from "./libraries/GlobalState.sol";
+
+// Remember to add the loupe functions from DiamondLoupeFacet to the diamond.
+// The loupe functions are required by the EIP2535 Diamonds standard
+
+contract DiamondCutFacet is IDiamondCut {
+    /// @notice Add/replace/remove any number of functions and optionally execute
+    ///         a function with delegatecall
+    /// @param _diamondCut Contains the facet addresses and function selectors
+    /// @param _init The address of the contract or facet to execute _calldata
+    /// @param _calldata A function call, including function selector and arguments
+    ///                  _calldata is executed with delegatecall on _init
+    function diamondCut(
+        FacetCut[] calldata _diamondCut,
+        address _init,
+        bytes calldata _calldata
+    ) external override {
+        GlobalState.requireCallerIsAdmin();
+        LibDiamond.diamondCut(_diamondCut, _init, _calldata);
+    }
+}
+
+pragma solidity ^0.8.0;
+/******************************************************************************\
+* Author: Nick Mudge <nick@perfectabstractions.com> (https://twitter.com/mudgen)
+* EIP-2535 Diamonds: https://eips.ethereum.org/EIPS/eip-2535
+/******************************************************************************/
+
+// The functions in DiamondLoupeFacet MUST be added to a diamond.
+// The EIP-2535 Diamond standard requires these functions.
+
+import { LibDiamond } from  "./libraries/LibDiamond.sol";
+import { IDiamondLoupe } from "./interfaces/IDiamondLoupe.sol";
+import { IERC165 } from "./interfaces/IERC165.sol";
+
+contract DiamondLoupeFacet is IDiamondLoupe, IERC165 {
+    // Diamond Loupe Functions
+    ////////////////////////////////////////////////////////////////////
+    /// These functions are expected to be called frequently by tools.
+    //
+    // struct Facet {
+    //     address facetAddress;
+    //     bytes4[] functionSelectors;
+    // }
+    /// @notice Gets all facets and their selectors.
+    /// @return facets_ Facet
+    function facets() external override view returns (Facet[] memory facets_) {
+        LibDiamond.DiamondStorage storage ds = LibDiamond.diamondStorage();
+        uint256 selectorCount = ds.selectors.length;
+        // create an array set to the maximum size possible
+        facets_ = new Facet[](selectorCount);
+        // create an array for counting the number of selectors for each facet
+        uint8[] memory numFacetSelectors = new uint8[](selectorCount);
+        // total number of facets
+        uint256 numFacets;
+        // loop through function selectors
+        for (uint256 selectorIndex; selectorIndex < selectorCount; selectorIndex++) {
+            bytes4 selector = ds.selectors[selectorIndex];
+            address facetAddress_ = ds.facetAddressAndSelectorPosition[selector].facetAddress;
+            bool continueLoop = false;
+            // find the functionSelectors array for selector and add selector to it
+            for (uint256 facetIndex; facetIndex < numFacets; facetIndex++) {
+                if (facets_[facetIndex].facetAddress == facetAddress_) {
+                    facets_[facetIndex].functionSelectors[numFacetSelectors[facetIndex]] = selector;
+                    // probably will never have more than 256 functions from one facet contract
+                    require(numFacetSelectors[facetIndex] < 255);
+                    numFacetSelectors[facetIndex]++;
+                    continueLoop = true;
+                    break;
+                }
+            }
+            // if functionSelectors array exists for selector then continue loop
+            if (continueLoop) {
+                continueLoop = false;
+                continue;
+            }
+            // create a new functionSelectors array for selector
+            facets_[numFacets].facetAddress = facetAddress_;
+            facets_[numFacets].functionSelectors = new bytes4[](selectorCount);
+            facets_[numFacets].functionSelectors[0] = selector;
+            numFacetSelectors[numFacets] = 1;
+            numFacets++;
+        }
+        for (uint256 facetIndex; facetIndex < numFacets; facetIndex++) {
+            uint256 numSelectors = numFacetSelectors[facetIndex];
+            bytes4[] memory selectors = facets_[facetIndex].functionSelectors;
+            // setting the number of selectors
+            assembly {
+                mstore(selectors, numSelectors)
+            }
+        }
+        // setting the number of facets
+        assembly {
+            mstore(facets_, numFacets)
+        }
+    }
+
+    /// @notice Gets all the function selectors supported by a specific facet.
+    /// @param _facet The facet address.
+    /// @return _facetFunctionSelectors The selectors associated with a facet address.
+    function facetFunctionSelectors(address _facet) external override view returns (bytes4[] memory _facetFunctionSelectors) {
+        LibDiamond.DiamondStorage storage ds = LibDiamond.diamondStorage();
+        uint256 selectorCount = ds.selectors.length;
+        uint256 numSelectors;
+        _facetFunctionSelectors = new bytes4[](selectorCount);
+        // loop through function selectors
+        for (uint256 selectorIndex; selectorIndex < selectorCount; selectorIndex++) {
+            bytes4 selector = ds.selectors[selectorIndex];
+            address facetAddress_ = ds.facetAddressAndSelectorPosition[selector].facetAddress;
+            if (_facet == facetAddress_) {
+                _facetFunctionSelectors[numSelectors] = selector;
+                numSelectors++;
+            }
+        }
+        // Set the number of selectors in the array
+        assembly {
+            mstore(_facetFunctionSelectors, numSelectors)
+        }
+    }
+
+    /// @notice Get all the facet addresses used by a diamond.
+    /// @return facetAddresses_
+    function facetAddresses() external override view returns (address[] memory facetAddresses_) {
+        LibDiamond.DiamondStorage storage ds = LibDiamond.diamondStorage();
+        uint256 selectorCount = ds.selectors.length;
+        // create an array set to the maximum size possible
+        facetAddresses_ = new address[](selectorCount);
+        uint256 numFacets;
+        // loop through function selectors
+        for (uint256 selectorIndex; selectorIndex < selectorCount; selectorIndex++) {
+            bytes4 selector = ds.selectors[selectorIndex];
+            address facetAddress_ = ds.facetAddressAndSelectorPosition[selector].facetAddress;
+            bool continueLoop = false;
+            // see if we have collected the address already and break out of loop if we have
+            for (uint256 facetIndex; facetIndex < numFacets; facetIndex++) {
+                if (facetAddress_ == facetAddresses_[facetIndex]) {
+                    continueLoop = true;
+                    break;
+                }
+            }
+            // continue loop if we already have the address
+            if (continueLoop) {
+                continueLoop = false;
+                continue;
+            }
+            // include address
+            facetAddresses_[numFacets] = facetAddress_;
+            numFacets++;
+        }
+        // Set the number of facet addresses in the array
+        assembly {
+            mstore(facetAddresses_, numFacets)
+        }
+    }
+
+    /// @notice Gets the facet address that supports the given selector.
+    /// @dev If facet is not found return address(0).
+    /// @param _functionSelector The function selector.
+    /// @return facetAddress_ The facet address.
+    function facetAddress(bytes4 _functionSelector) external override view returns (address facetAddress_) {
+        LibDiamond.DiamondStorage storage ds = LibDiamond.diamondStorage();
+        facetAddress_ = ds.facetAddressAndSelectorPosition[_functionSelector].facetAddress;
+    }
+
+    // This implements ERC-165.
+    function supportsInterface(bytes4 _interfaceId) external override view returns (bool) {
+        LibDiamond.DiamondStorage storage ds = LibDiamond.diamondStorage();
+        return ds.supportedInterfaces[_interfaceId];
+    }
+}
+
+pragma solidity ^0.8.0;
+
+import { GlobalState } from "./libraries/GlobalState.sol";
+import { OpenEditionLib } from "./libraries/OpenEditionLib.sol";
+
+contract OpenEditionFacet {
+    /**
+     * @dev Begin the sale. The sale period
+     * will automatically elapse and conclude. 
+     */
+    function beginSale() public {
+        GlobalState.requireCallerIsAdmin();
+        OpenEditionLib.getState().saleTimestamp = block.timestamp;
+    }
+
+    /**
+     * @dev Set the exact time when the sale will begin.
+     */
+    function setSaleTimestamp(uint256 timestamp) public {
+        GlobalState.requireCallerIsAdmin();
+        OpenEditionLib.getState().saleTimestamp = timestamp;
+    }
+
+    /**
+     * @dev Set the sale length in seconds.
+     */
+    function setSaleLength(uint256 length) public {
+        GlobalState.requireCallerIsAdmin();
+        OpenEditionLib.getState().saleLength = length;
+    }
+
+    /**
+     * @dev Set the sale length in hours.
+     */
+    function setSaleLengthInHours(uint256 length) public {
+        GlobalState.requireCallerIsAdmin();
+        OpenEditionLib.getState().saleLength = length * 3600;
+    }
+
+    /**
+     * @dev Check whether the sale is currently active.
+     */
+    function isSaleActive() public view returns (bool) {
+        return OpenEditionLib.isSaleActive();
+    }
+}
+
+pragma solidity ^0.8.0;
+
+import { GlobalState } from "./libraries/GlobalState.sol";
+
+contract OwnershipFacet {
+    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+    
+    function owner() public view returns (address) {
+        return GlobalState.getState().owner;
+    }
+
+    function transferOwnership(address newOwner) public {
+        address previousOwner = owner();
+        require(msg.sender == previousOwner, "OwnershipFacet: caller must be contract owner");
+
+        GlobalState.getState().owner = newOwner;
+        emit OwnershipTransferred(previousOwner, newOwner);
+    }
+
+    function isAdmin(address _addr) public view returns (bool) {
+        return GlobalState.isAdmin(_addr);
+    }
+
+    function toggleAdmins(address[] calldata accounts) public {
+        GlobalState.requireCallerIsAdmin();
+        GlobalState.state storage _state = GlobalState.getState();
+
+        for (uint256 i; i < accounts.length; i++) {
+            if (_state.admins[accounts[i]]) {
+                delete _state.admins[accounts[i]];
+            } else {
+                _state.admins[accounts[i]] = true;
+            }
+        }
+    }
+}
+
+pragma solidity ^0.8.0;
+
+import { GlobalState } from "./libraries/GlobalState.sol";
+import { RoyaltiesConfigLib } from "./libraries/RoyaltiesConfigLib.sol";
+
+contract RoyaltiesConfigFacet {
+    /**
+     * @dev Check whether the sale is currently active.
+     */
+    function royaltyInfo(uint256, uint256 value) external virtual view returns (address, uint256) {
+        return RoyaltiesConfigLib.royaltyInfo(0, value);
+    }
+
+    /**
+    * @dev Set royalty recipient and basis points.
+     */
+    function setRoyalties(address payable recipient, uint256 bps) public {
+        GlobalState.requireCallerIsAdmin();
+
+        RoyaltiesConfigLib.state storage s = RoyaltiesConfigLib.getState();
+        s.royaltyRecipient = recipient;
+        s.royaltyBps = bps;
+    }
+}
+
+pragma solidity ^0.8.0;
+
+import { GlobalState } from "./libraries/GlobalState.sol";
+import { TokenState } from "./libraries/TokenState.sol";
+import "./libraries/TokenLib.sol";
+import { OpenEditionLib } from "./libraries/OpenEditionLib.sol";
+
+
+contract TokenFacet is ERC721A {
+
+    constructor()
+    ERC721A("MyToken", "MTK") {}
+
+    // SETUP & ADMIN FUNCTIONS //
+
+    function setBaseURI(string memory _uri) public {
+        GlobalState.requireCallerIsAdmin();
+        TokenState.getState().uri = _uri;
+    }
+
+    function setPrice(uint256 _price) public {
+        GlobalState.requireCallerIsAdmin();
+        TokenState.getState().price = _price;
+    }
+
+    function setWalletCap(uint256 _walletCap) public {
+        GlobalState.requireCallerIsAdmin();
+        TokenState.getState().walletCap = _walletCap;
+    }
+
+    function toggleBurnState() public {
+        GlobalState.requireCallerIsAdmin();
+        TokenState.getState().burnState = !TokenState.getState().burnState;
+    }
+
+    function reserve(uint256 amount) public {
+        GlobalState.requireCallerIsAdmin();
+        _safeMint(msg.sender, amount);
+    }
+
+    // PUBLIC FUNCTIONS //
+
+    function mint(uint256 amount) 
+        public 
+        payable 
+    {
+        GlobalState.requireContractIsNotPaused();
+        require(OpenEditionLib.isSaleActive(), "Sale is not active");
+        require(amount * TokenState.getState().price == msg.value, "Incorrect amount of Ether");
+        require(
+            amount + _numberMinted(msg.sender) <= TokenState.getState().walletCap,
+            string(
+                abi.encodePacked(
+                    "Maximum tokens per wallet is ",
+                    _toString(TokenState.getState().walletCap)
+                )
+            )
+        );
+        _safeMint(msg.sender, amount);
+    }
+
+    function burn(uint256 tokenId) public {
+        GlobalState.requireContractIsNotPaused();
+        require(TokenState.getState().burnState, "Token burning is not available now");
+        _burn(tokenId, true);
+    }
+
+    // METADATA & MISC FUNCTIONS //
+
+    function supportsInterface(bytes4 interfaceId)
+        public
+        view
+        override(ERC721A)
+        returns (bool)
+    {
+        return
+            ERC721A.supportsInterface(interfaceId);
+    }
+
+    function _beforeTokenTransfers(
+        address from,
+        address to,
+        uint256 startTokenId,
+        uint256 quantity
+    ) internal override {
+        GlobalState.requireContractIsNotPaused();
+        super._beforeTokenTransfers;
+    }
+
+    function _baseURI() internal view override returns (string memory) {
+        return TokenState.getState().uri;
+    } 
+
+}
+
+pragma solidity ^0.8.0;
+
+/******************************************************************************\
+* Author: Nick Mudge <nick@perfectabstractions.com> (https://twitter.com/mudgen)
+* EIP-2535 Diamonds: https://eips.ethereum.org/EIPS/eip-2535
+*
+* Implementation of a diamond.
+/******************************************************************************/
+
+import { LibDiamond } from "./libraries/LibDiamond.sol";
+import { IDiamondLoupe } from "./interfaces/IDiamondLoupe.sol";
+import { IDiamondCut } from "./interfaces/IDiamondCut.sol";
+import { IERC173 } from "./interfaces/IERC173.sol";
+import { IERC165 } from "./interfaces/IERC165.sol";
+import { IERC721 } from "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import { IERC721Metadata } from "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol";
+import { TokenState } from "./libraries/TokenState.sol";
+
+contract DiamondInit {    
+
+    function init() external {
+
+        LibDiamond.DiamondStorage storage ds = LibDiamond.diamondStorage();
+        TokenState.State storage ts = TokenState.getState();
+        ds.supportedInterfaces[type(IERC165).interfaceId] = true;
+        ds.supportedInterfaces[type(IDiamondCut).interfaceId] = true;
+        ds.supportedInterfaces[type(IDiamondLoupe).interfaceId] = true;
+        ds.supportedInterfaces[type(IERC173).interfaceId] = true;
+        ds.supportedInterfaces[type(IERC721).interfaceId] = true;
+        ds.supportedInterfaces[type(IERC721Metadata).interfaceId] = true;
+        ds.supportedInterfaces[0x2a55205a] = true; // On-Chain Royalty interface Id
+
+        ts._name = "MyToken";
+        ts._symbol = "MTK";
+        ts.uri = "https://gateway.pinata.cloud/ipfs/../";
+        ts.walletCap = 20;
+        ts.price = 0.01 ether;
+
+    }
+}
+
+import "./facets/AdminPauseFacet.sol";
+import "./facets/DiamondCutFacet.sol";
+import "./facets/DiamondLoupeFacet.sol";
+import "./facets/OpenEditionFacet.sol";
+import "./facets/OwnershipFacet.sol";
+import "./facets/RoyaltiesConfigFacet.sol";
+import "./facets/TokenFacet.sol";
